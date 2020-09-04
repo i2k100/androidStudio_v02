@@ -1,0 +1,85 @@
+<!--
+  ~ Copyright (c) 2015-present, Parse, LLC.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the BSD-style license found in the
+  ~ LICENSE file in the root directory of this source tree. An additional grant
+  ~ of patent rights can be found in the PATENTS file in the same directory.
+  -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_focused"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="181dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/uber" />
+
+    <Switch
+        android:id="@+id/userTypeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="69dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:checked="false"
+        android:thumbTint="@color/cardview_light_background"
+        android:trackTint="@color/cardview_light_background"
+        android:theme="@style/CardView.Light"/>
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userTypeSwitch"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="-49dp"
+        android:layout_toEndOf="@+id/userTypeSwitch"
+        android:layout_toRightOf="@+id/userTypeSwitch"
+        android:gravity="center"
+        android:text="Driver"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/riderTextView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userTypeSwitch"
+        android:layout_marginStart="-148dp"
+        android:layout_marginLeft="-148dp"
+        android:layout_marginTop="-48dp"
+        android:layout_toEndOf="@+id/userTypeSwitch"
+        android:layout_toRightOf="@+id/userTypeSwitch"
+        android:gravity="center"
+        android:text="Rider"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/getStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userTypeSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:onClick="getStarted"
+        android:text="Get Started" />
+</RelativeLayout>
